@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Social Network</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Welcome to the Social Network</h1>
+        </header>
+        
+        <section id="profile-section">
+            <h2>Profile</h2>
+            <div id="profile">
+                <p id="username">Username: JohnDoe</p>
+                <label for="status">Status: </label>
+                <input type="text" id="status" placeholder="Enter your status">
+                <button id="update-status">Update Status</button>
+                <p id="current-status"></p>
+            </div>
+        </section>
+
+        <section id="message-section">
+            <h2>Send Message</h2>
+            <label for="recipient">To: </label>
+            <input type="text" id="recipient" placeholder="Enter recipient username">
+            <label for="message">Message: </label>
+            <textarea id="message" placeholder="Enter your message"></textarea>
+            <button id="send-message">Send Message</button>
+        </section>
+
+        <section id="messages-section">
+            <h2>Messages</h2>
+            <ul id="messages"></ul>
+        </section>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
